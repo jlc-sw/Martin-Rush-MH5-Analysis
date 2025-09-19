@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FixtureDefinition>
+    <Manufacturer>Martin</Manufacturer>
+    <Model>Rush MH 5 Profile (Demo Analysis)</Model>
+    <Type>Moving Head</Type>
+
+    <Channels>
+        <!-- Channel 3: Strobe -->
+        <Channel number="3">
+            <ChannelName>Strobe</ChannelName>
+            <Group>Shutter</Group>
+            <Capabilities>
+                <Capability min="0"   max="7">Shutter closed</Capability>
+                <Capability min="8"   max="15">Shutter open</Capability>
+                <Capability min="16"  max="131">Strobe slow → fast</Capability>
+                <Capability min="132" max="167">Ramp up strobe</Capability>
+                <Capability min="168" max="203">Ramp down strobe</Capability>
+                <Capability min="204" max="239">Pulse strobe</Capability>
+                <Capability min="240" max="247">Random strobe</Capability>
+                <Capability min="248" max="255">Shutter open</Capability>
+            </Capabilities>
+        </Channel>
+
+        <!-- Channel 4: Color Wheel 1 -->
+        <Channel number="4">
+            <ChannelName>Color Wheel 1</ChannelName>
+            <Group>Colour</Group>
+            <Capabilities>
+                <Capability min="0"   max="0">Open</Capability>
+                <Capability min="1"   max="14">Open → Red</Capability>
+                <Capability min="15"  max="15">Red</Capability>
+                <Capability min="16"  max="29">Red → Deep Blue</Capability>
+                <Capability min="30"  max="30">Deep Blue</Capability>
+                <Capability min="31"  max="44">Deep Blue → Lavender</Capability>
+                <Capability min="45"  max="45">Lavender</Capability>
+                <Capability min="46"  max="59">Lavender → Magenta</Capability>
+                <Capability min="60"  max="60">Magenta</Capability>
+                <Capability min="61"  max="74">Magenta → Yellow</Capability>
+                <Capability min="75"  max="75">Yellow</Capability>
+                <Capability min="76"  max="89">Yellow → Orange</Capability>
+                <Capability min="90"  max="90">Orange</Capability>
+                <Capability min="91"  max="104">Orange → Light Green</Capability>
+                <Capability min="105" max="105">Light Green</Capability>
+                <Capability min="106" max="119">Light Green → Light Blue</Capability>
+                <Capability min="120" max="120">Light Blue</Capability>
+                <Capability min="121" max="134">Light Blue → Open</Capability>
+                <Capability min="135" max="160">Open</Capability>
+
+                <!-- Discrete fixed colors -->
+                <Capability min="161" max="163">Red</Capability>
+                <Capability min="164" max="166">Deep Blue</Capability>
+                <Capability min="167" max="169">Lavender</Capability>
+                <Capability min="170" max="172">Magenta</Capability>
+                <Capability min="173" max="175">Yellow</Capability>
+                <Capability min="176" max="178">Orange</Capability>
+                <Capability min="179" max="181">Light Green</Capability>
+                <Capability min="182" max="184">Light Blue</Capability>
+                <Capability min="185" max="192">Open</Capability>
+
+                <!-- Rotation modes -->
+                <Capability min="193" max="214">Color Wheel 1 rotation CW fast → slow</Capability>
+                <Capability min="215" max="221">Color Wheel 1 rotation stop</Capability>
+                <Capability min="222" max="243">Color Wheel 1 rotation CCW slow → fast</Capability>
+
+                <!-- Random color modes -->
+                <Capability min="244" max="247">Random color fast</Capability>
+                <Capability min="248" max="251">Random color 50% speed</Capability>
+                <Capability min="252" max="255">Random color slow</Capability>
+            </Capabilities>
+        </Channel>
+    </Channels>
+</FixtureDefinition>
